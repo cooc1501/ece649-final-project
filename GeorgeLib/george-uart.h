@@ -9,7 +9,7 @@
 #define TXBUF UCA1TXBUF
 #define RXBUF UCA1RXBUF
 
-void init_UART(void){
+void uart_init(void){
     // Divert pins to UART functionality
     P3SEL1 &= ~(BIT4|BIT5);
     P3SEL0 |= (BIT4|BIT5);
@@ -20,8 +20,6 @@ void init_UART(void){
     UCA1MCTLW = 0xD600;
     UCA1BR1 = 0;
     UCA1CTL1 &= ~UCSWRST;
-
-    // 9600 baud rate doesn't work for some reason 
 }
 
 void uart_write_char(unsigned char ch){

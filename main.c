@@ -1,4 +1,4 @@
-#include <msp430.h>
+#include <msp430fr6989.h>
 
 #include <GrLib/grlib/grlib.h>          // Graphics library (grlib)
 #include "LcdDriver/lcd_driver.h"       // LCD driver
