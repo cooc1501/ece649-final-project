@@ -1,0 +1,252 @@
+#include <msp430.h>
+
+#include <GrLib/grlib/grlib.h>          // Graphics library (grlib)
+#include "LcdDriver/lcd_driver.h"       // LCD driver
+#include <stdio.h>
+
+#include "GeorgeLib/george-uart.h"
+
+#define redLED BIT0
+#define greenLED BIT7
+#define S1 BIT1
+#define S2 BIT2
+
+// Global Definitions
+enum State {
+    HOME_SCREEN, PIC1, PIC2, PIC3, PIC4, PIC5
+}
+
+enum Joystick_Direction {
+    NONE = 0, UP, DOWN, LEFT, RIGHT
+}
+
+enum Button_State {
+    INACTIVE = 0, ACTIVE = 1
+}
+
+// Functions
+Button_State checkButton(int button);
+Joystick_Direction checkJoystick();
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    volatile unsigned int counter=0;
+    char mystring[20];
+    unsigned int n;
+    extern tImage unh_logo;
+
+    enum State state = HOME_SCREEN;
+    enum Button_State s_S1, s_S2;
+    enum Joystick_Direction s_joystick;
+
+    /* Initialize ADC12_B */
+
+
+    WDTCTL = WDTPW | WDTHOLD;     // Stop the Watchdog timer
+    PM5CTL0 &= ~LOCKLPM5;         // Disable GPIO power-on default high-impedance mode
+
+    // configure LEDs
+    P1DIR |= redLED;    P1OUT &= ~redLED;
+    P9DIR |= greenLED;  P9OUT &= ~greenLED;
+    
+    // configure buttons as input
+    P1DIR &= ~S1; P1REN |= S1; P1OUT |= S1;  
+    P1DIR &= ~S2; P1REN |= S2; P1OUT |= S2;  
+
+    // Configure SMCLK to 8 MHz (used as SPI clock)
+    CSCTL0 = CSKEY;                 // Unlock CS registers
+    CSCTL3 &= ~(BIT4|BIT5|BIT6);    // DIVS=0
+    CSCTL0_H = 0;                   // Relock the CS registers
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    Graphics_Context g_sContext;        // Declare a graphic library context
+    Crystalfontz128x128_Init();         // Initialize the display
+
+    // Set the screen orientation
+    Crystalfontz128x128_SetOrientation(0);
+
+    // Initialize the context
+    Graphics_initContext(&g_sContext, &g_sCrystalfontz128x128);
+
+    // Set background and foreground colors
+    Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+
+    // Set the default font for strings
+    GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
+
+    // Clear the screen
+    Graphics_clearDisplay(&g_sContext);
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    /*
+    Graphics_drawStringCentered(&g_sContext, "Welcome to", AUTO_STRING_LENGTH, 64, 30, OPAQUE_TEXT);
+
+    sprintf(mystring, "ECE 649!");
+    Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 55, OPAQUE_TEXT);
+
+    n = 1234;
+    sprintf(mystring, "%d", n);
+    Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 80, OPAQUE_TEXT);
+
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
+    Graphics_Rectangle color1 = {20,100,128,103};
+    Graphics_drawRectangle(&g_sContext, &color1);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
+    Graphics_fillRectangle(&g_sContext, &color1);
+
+    Graphics_Rectangle color2 = {40,105,128,108};
+    Graphics_drawRectangle(&g_sContext, &color2);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+    Graphics_fillRectangle(&g_sContext, &color2);
+
+    Graphics_Rectangle color3 = {60,110,128,113};
+    Graphics_drawRectangle(&g_sContext, &color3);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
+    Graphics_fillRectangle(&g_sContext, &color3);
+
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
+    Graphics_drawCircle(&g_sContext, 5, 110, 5);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+    Graphics_fillCircle (&g_sContext, 17, 110, 5);
+    */
+
+    Graphics_drawImage(&g_sContext, &unh_logo,0,0);
+
+    // Program Main Loop
+    while(1){
+        // Sample the current state of the joystick and pushbuttons
+        s_joystick = checkJoystick();
+        s_S1 = checkButton(S1);
+        s_S2 = checkButton(S2);
+
+        // Check state transition conditions
+        switch (state) {
+            case HOME_SCREEN:
+                if (s_S1) {
+                    state = PIC1;
+                }
+                break;
+            
+            case PIC1:
+                if (s_S2) {
+                    state = HOME_SCREEN;
+                    break;
+                }
+                switch (s_joystick) {
+                    case RIGHT:
+                        state++;
+                        break;
+                    case LEFT:
+                        state = PIC5;
+                        break;
+                }
+                break;
+
+            case PIC2:
+                if (s_S2) {
+                    state = HOME_SCREEN;
+                    break;
+                }
+                switch (s_joystick) {
+                    case RIGHT:
+                        state++;
+                        break;
+                    case LEFT:
+                        state--;
+                        break;
+                }
+                break;
+
+            case PIC3:
+                if (s_S2) {
+                    state = HOME_SCREEN;
+                    break;
+                }
+                switch (s_joystick) {
+                    case RIGHT:
+                        state++;
+                        break;
+                    case LEFT:
+                        state--;
+                        break;
+                }
+                break;
+
+            case PIC4:
+                if (s_S2) {
+                    state = HOME_SCREEN;
+                    break;
+                }
+                switch (s_joystick) {
+                    case RIGHT:
+                        state++;
+                        break;
+                    case LEFT:
+                        state--;
+                        break;
+                }
+                break;
+
+            case PIC5:
+                if (s_S2) {
+                    state = HOME_SCREEN;
+                    break;
+                }
+                switch (s_joystick) {
+                    case RIGHT:
+                        state = PIC1;
+                        break;
+                    case LEFT:
+                        state--;
+                        break;
+                }
+                break;
+
+            default:
+                state = HOME_SCREEN
+                break;
+
+        }
+
+        // Perform current state actions
+        switch (state) {
+            case HOME_SCREEN:
+                // state behavior
+                break;
+            
+            case PIC1:
+                // state behavior
+                break;
+
+            case PIC2:
+                // state behavior
+                break;
+
+            case PIC3:
+                // state behavior
+                break;
+
+            case PIC4:
+                // state behavior
+                break;
+
+            case PIC5:
+                // state behavior
+                break;
+
+            default:
+                // state behavior
+                break;
+        }
+    }
+
+    return 0;
+}
+
+Joystick_Direction checkJoystick() {
+    
+}
