@@ -1,10 +1,11 @@
 #include <msp430fr6989.h>
 
 #include <GrLib/grlib/grlib.h>          // Graphics library (grlib)
-#include "LcdDriver/lcd_driver.h"       // LCD driver
+// #include "LcdDriver/lcd_driver.h"       // LCD driver
 #include <stdio.h>
 
 #include "GeorgeLib/george-uart.h"
+#include "GeorgeLib/george-joystick.h"
 
 #define redLED BIT0
 #define greenLED BIT7
@@ -14,19 +15,15 @@
 // Global Definitions
 enum State {
     HOME_SCREEN, PIC1, PIC2, PIC3, PIC4, PIC5
-}
-
-enum Joystick_Direction {
-    NONE = 0, UP, DOWN, LEFT, RIGHT
-}
+};
 
 enum Button_State {
     INACTIVE = 0, ACTIVE = 1
-}
+};
 
 // Functions
-Button_State checkButton(int button);
-Joystick_Direction checkJoystick();
+// enum Button_State checkButton(int button);
+// enum Joystick_Direction checkJoystick();
 
 /**
  * main.c
@@ -62,66 +59,67 @@ int main(void)
     CSCTL0_H = 0;                   // Relock the CS registers
 
     ////////////////////////////////////////////////////////////////////////////////////////////
-    Graphics_Context g_sContext;        // Declare a graphic library context
-    Crystalfontz128x128_Init();         // Initialize the display
+    // Graphics_Context g_sContext;        // Declare a graphic library context
+    // Crystalfontz128x128_Init();         // Initialize the display
 
-    // Set the screen orientation
-    Crystalfontz128x128_SetOrientation(0);
+    // // Set the screen orientation
+    // Crystalfontz128x128_SetOrientation(0);
 
-    // Initialize the context
-    Graphics_initContext(&g_sContext, &g_sCrystalfontz128x128);
+    // // Initialize the context
+    // Graphics_initContext(&g_sContext, &g_sCrystalfontz128x128);
 
-    // Set background and foreground colors
-    Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+    // // Set background and foreground colors
+    // Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
 
-    // Set the default font for strings
-    GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
+    // // Set the default font for strings
+    // GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
 
-    // Clear the screen
-    Graphics_clearDisplay(&g_sContext);
-    ////////////////////////////////////////////////////////////////////////////////////////////
+    // // Clear the screen
+    // Graphics_clearDisplay(&g_sContext);
+    // ////////////////////////////////////////////////////////////////////////////////////////////
 
-    /*
-    Graphics_drawStringCentered(&g_sContext, "Welcome to", AUTO_STRING_LENGTH, 64, 30, OPAQUE_TEXT);
+    // /*
+    // Graphics_drawStringCentered(&g_sContext, "Welcome to", AUTO_STRING_LENGTH, 64, 30, OPAQUE_TEXT);
 
-    sprintf(mystring, "ECE 649!");
-    Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 55, OPAQUE_TEXT);
+    // sprintf(mystring, "ECE 649!");
+    // Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 55, OPAQUE_TEXT);
 
-    n = 1234;
-    sprintf(mystring, "%d", n);
-    Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 80, OPAQUE_TEXT);
+    // n = 1234;
+    // sprintf(mystring, "%d", n);
+    // Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 80, OPAQUE_TEXT);
 
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
-    Graphics_Rectangle color1 = {20,100,128,103};
-    Graphics_drawRectangle(&g_sContext, &color1);
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
-    Graphics_fillRectangle(&g_sContext, &color1);
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
+    // Graphics_Rectangle color1 = {20,100,128,103};
+    // Graphics_drawRectangle(&g_sContext, &color1);
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
+    // Graphics_fillRectangle(&g_sContext, &color1);
 
-    Graphics_Rectangle color2 = {40,105,128,108};
-    Graphics_drawRectangle(&g_sContext, &color2);
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
-    Graphics_fillRectangle(&g_sContext, &color2);
+    // Graphics_Rectangle color2 = {40,105,128,108};
+    // Graphics_drawRectangle(&g_sContext, &color2);
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+    // Graphics_fillRectangle(&g_sContext, &color2);
 
-    Graphics_Rectangle color3 = {60,110,128,113};
-    Graphics_drawRectangle(&g_sContext, &color3);
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
-    Graphics_fillRectangle(&g_sContext, &color3);
+    // Graphics_Rectangle color3 = {60,110,128,113};
+    // Graphics_drawRectangle(&g_sContext, &color3);
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
+    // Graphics_fillRectangle(&g_sContext, &color3);
 
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
-    Graphics_drawCircle(&g_sContext, 5, 110, 5);
-    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
-    Graphics_fillCircle (&g_sContext, 17, 110, 5);
-    */
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
+    // Graphics_drawCircle(&g_sContext, 5, 110, 5);
+    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
+    // Graphics_fillCircle (&g_sContext, 17, 110, 5);
+    // */
 
-    Graphics_drawImage(&g_sContext, &unh_logo,0,0);
+    // Graphics_drawImage(&g_sContext, &unh_logo,0,0);
 
     // Program Main Loop
     while(1){
         // Sample the current state of the joystick and pushbuttons
-        s_joystick = checkJoystick();
-        s_S1 = checkButton(S1);
-        s_S2 = checkButton(S2);
+        // s_joystick = checkJoystick();
+        check_adc_joystick(&s_joystick);
+        // s_S1 = checkButton(S1);
+        // s_S2 = checkButton(S2);
 
         // Check state transition conditions
         switch (state) {
@@ -207,7 +205,7 @@ int main(void)
                 break;
 
             default:
-                state = HOME_SCREEN
+                state = HOME_SCREEN;
                 break;
 
         }
@@ -247,6 +245,6 @@ int main(void)
     return 0;
 }
 
-Joystick_Direction checkJoystick() {
+// Joystick_Direction checkJoystick() {
     
-}
+// }
