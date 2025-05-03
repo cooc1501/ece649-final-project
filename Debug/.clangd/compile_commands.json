@@ -1,247 +1,247 @@
 [
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/fonts/fontcm12.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/fonts/fontcm12.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/fonts/fontcm12b.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/fonts/fontcm12b.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/fonts/fontcm16.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/fonts/fontcm16.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/fonts/fontcmss12.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/fonts/fontcmss12.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/fonts/fontcmtt12.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/fonts/fontcmtt12.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/fonts/fontfixed6x8.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/fonts/fontfixed6x8.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/button.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/button.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/checkbox.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/checkbox.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/circle.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/circle.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/context.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/context.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/display.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/display.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/image.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/image.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/imageButton.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/imageButton.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/line.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/line.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/radioButton.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/radioButton.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/rectangle.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/rectangle.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/GrLib/grlib/string.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/GrLib/grlib/string.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/LcdDriver/lcd_driver.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/LcdDriver/lcd_driver.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/LcdDriver/middle_driver.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/LcdDriver/middle_driver.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/adc12_b.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/adc12_b.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/aes256.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/aes256.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/comp_e.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/comp_e.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/crc.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/crc.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/crc32.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/crc32.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/cs.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/cs.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/dma.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/dma.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/esi.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/esi.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/eusci_a_spi.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/eusci_a_spi.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/eusci_a_uart.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/eusci_a_uart.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/eusci_b_i2c.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/eusci_b_spi.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/eusci_b_spi.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/framctl.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/framctl.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/gpio.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/gpio.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/lcd_c.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/lcd_c.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/mpu.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/mpu.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/mpy32.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/mpy32.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/pmm.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/pmm.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/ram.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/ram.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/ref_a.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/ref_a.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/rtc_b.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/rtc_b.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/rtc_c.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/rtc_c.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/sfr.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/sfr.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/sysctl.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/sysctl.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/timer_a.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/timer_a.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/timer_b.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/timer_b.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/tlv.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/tlv.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx/wdt_a.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx/wdt_a.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/main.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/main.c"
    },
    {
-      "directory" : "/home/george/workspace_ccstheia/Final/Debug",
-      "command"   : "clang++ -I\"/home/george/bin/ccs/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/Final\" -I\"/home/george/workspace_ccstheia/Final/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/bin/ccs/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
-      "file"      : "/home/george/workspace_ccstheia/Final/unh_logo.c"
+      "directory" : "/home/george/workspace_ccstheia/ece649-final-project/Debug",
+      "command"   : "clang++ -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/ccs_base/msp430/include\" -I\"/home/george/workspace_ccstheia/ece649-final-project\" -I\"/home/george/workspace_ccstheia/ece649-final-project/driverlib/MSP430FR5xx_6xx\" -I\"/home/george/pkgs/CCS_20.0.2.00005_linux/ccs2002/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR6989__ -D_MPU_ENABLE",
+      "file"      : "/home/george/workspace_ccstheia/ece649-final-project/unh_logo.c"
    }
 ]

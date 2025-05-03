@@ -114,6 +114,8 @@ int main(void)
     // Graphics_drawImage(&g_sContext, &unh_logo,0,0);
 
     // Program Main Loop
+    uart_init();
+    adc_init();
     while(1){
         // Sample the current state of the joystick and pushbuttons
         // s_joystick = checkJoystick();
