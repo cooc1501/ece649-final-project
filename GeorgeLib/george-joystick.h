@@ -26,9 +26,6 @@ void adc_init() {
     // sample-input signal (ADC12SC software signal), and change conversion mode to sequence of channels mode
     ADC12CTL2 |= ADC12RES_2;  // use 12-bit sampling (right aligned, so bits 15-12 are 0)
     ADC12CTL3 &= ~(ADC12CSTARTADD0 | ADC12CSTARTADD1 | ADC12CSTARTADD2 | ADC12CSTARTADD3 | ADC12CSTARTADD4);
-
-
-    // default clock is MODOSC, default divider is 1. These are fine.
     
     // configure memory 0 and 1 for channels 4 and 10 respectively
     ADC12MCTL0 |= ADC12INCH_4;
@@ -38,7 +35,7 @@ void adc_init() {
     // ADC12CTL0 |= ADC12ENC;
 }
 
-void check_adc_joystick(enum Joystick_Direction *x){
+void check_adc_joystick(enum Joystick_Direction *direction){
     // trigger reading
     ADC12CTL0 |= ADC12ENC | ADC12SC;
     
@@ -48,17 +45,28 @@ void check_adc_joystick(enum Joystick_Direction *x){
     while (~ADC12IFGR0 & ADC12IFG1) {}
 
     // load positions to pointer args
-    uint16_t pos_x = ADC12MEM1;  // [left] 0 --- 2000+-200 --- 4095 [right]
-    uint16_t pos_y = ADC12MEM0;  // [down] 0 --- 2000+-200 --- 4095 [up]
+    uint16_t pos_x = ADC12MEM1;  // [left] 0 --- 2048+-200 --- 4095 [right]
+    uint16_t pos_y = ADC12MEM0;  // [down] 0 --- 2048+-200 --- 4095 [up]
+
+    if (pos_x >= 1848 && pos_x <= 2248) {
+        *direction = NONE;   
+    }
+    else if (pos_x <= 1848) {
+        *direction = LEFT;
+    }
+    else {
+        *direction = RIGHT;
+    }
+
 
     // char buffer[100];
     // sprintf(buffer, "X pos: %d\nY pos: %d\0", pos_x, pos_y);
     // sprintf(buffer, "X pos: \nY pos: \0");
     // uart_write_ascii(buffer);
-    uart_write_uint16(pos_x);
-    uart_write_char('\t');
-    uart_write_uint16(pos_y);
-    uart_write_char('\n');
+    // uart_write_uint16(pos_x);
+    // uart_write_char('\t');
+    // uart_write_uint16(pos_y);
+    // uart_write_char('\n');
 
     ADC12CTL0 &= ~ADC12ENC;
     return;

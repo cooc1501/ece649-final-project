@@ -9,8 +9,8 @@
 
 #define redLED BIT0
 #define greenLED BIT7
-#define S1 BIT1
-#define S2 BIT2
+#define S1 BIT3  // port 3
+#define S2 BIT2  // port 3
 
 // Global Definitions
 enum State {
@@ -22,7 +22,7 @@ enum Button_State {
 };
 
 // Functions
-// enum Button_State checkButton(int button);
+enum Button_State checkButton(int button);
 // enum Joystick_Direction checkJoystick();
 
 /**
@@ -50,8 +50,8 @@ int main(void)
     P9DIR |= greenLED;  P9OUT &= ~greenLED;
     
     // configure buttons as input
-    P1DIR &= ~S1; P1REN |= S1; P1OUT |= S1;  
-    P1DIR &= ~S2; P1REN |= S2; P1OUT |= S2;  
+    P3DIR &= ~S1; P3REN |= S1; P3OUT |= S1;  
+    P3DIR &= ~S2; P3REN |= S2; P3OUT |= S2;
 
     // Configure SMCLK to 8 MHz (used as SPI clock)
     CSCTL0 = CSKEY;                 // Unlock CS registers
@@ -120,8 +120,8 @@ int main(void)
         // Sample the current state of the joystick and pushbuttons
         // s_joystick = checkJoystick();
         check_adc_joystick(&s_joystick);
-        // s_S1 = checkButton(S1);
-        // s_S2 = checkButton(S2);
+        s_S1 = checkButton(1);
+        s_S2 = checkButton(2);
 
         // Check state transition conditions
         switch (state) {
@@ -247,6 +247,22 @@ int main(void)
     return 0;
 }
 
-// Joystick_Direction checkJoystick() {
-    
-// }
+enum Button_State checkButton(int button){
+    switch (button) {
+        case 1:
+            if (P3IN & S1){
+                return DOWN;
+            }
+            return UP;
+            break;
+        case 2:
+            if (P3IN & S2){
+                return DOWN;
+            }
+            return UP;
+            break;
+        default:
+            return NONE;
+    }
+}
+
