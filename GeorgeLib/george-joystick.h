@@ -58,16 +58,6 @@ void check_adc_joystick(enum Joystick_Direction *direction){
         *direction = RIGHT;
     }
 
-
-    // char buffer[100];
-    // sprintf(buffer, "X pos: %d\nY pos: %d\0", pos_x, pos_y);
-    // sprintf(buffer, "X pos: \nY pos: \0");
-    // uart_write_ascii(buffer);
-    // uart_write_uint16(pos_x);
-    // uart_write_char('\t');
-    // uart_write_uint16(pos_y);
-    // uart_write_char('\n');
-
     ADC12CTL0 &= ~ADC12ENC;
     return;
 }

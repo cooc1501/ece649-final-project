@@ -1,11 +1,15 @@
 #include <msp430fr6989.h>
 
 #include <GrLib/grlib/grlib.h>          // Graphics library (grlib)
-// #include "LcdDriver/lcd_driver.h"       // LCD driver
+#include "LcdDriver/lcd_driver.h"       // LCD driver
 #include <stdio.h>
 
 #include "GeorgeLib/george-uart.h"
 #include "GeorgeLib/george-joystick.h"
+#include "GeorgeLib/george-assets.h"
+
+// debug definitions
+// #define DEBUG 
 
 #define redLED BIT0
 #define greenLED BIT7
@@ -23,7 +27,8 @@ enum Button_State {
 
 // Functions
 enum Button_State checkButton(int button);
-// enum Joystick_Direction checkJoystick();
+void displayHome(Graphics_Context *ctx);
+
 
 /**
  * main.c
@@ -33,14 +38,22 @@ int main(void)
     volatile unsigned int counter=0;
     char mystring[20];
     unsigned int n;
-    extern tImage unh_logo;
+    unsigned int img_chng = 0;
+    unsigned int home_chng = 1;
+    
+    // import bitmaps
+    extern tImage moe;
+    extern tImage clancy;
+    extern tImage daisy;
+    extern tImage norb;
+    extern tImage vanish;
+    tImage *active;
 
     enum State state = HOME_SCREEN;
     enum Button_State s_S1, s_S2;
     enum Joystick_Direction s_joystick;
 
     /* Initialize ADC12_B */
-
 
     WDTCTL = WDTPW | WDTHOLD;     // Stop the Watchdog timer
     PM5CTL0 &= ~LOCKLPM5;         // Disable GPIO power-on default high-impedance mode
@@ -58,28 +71,35 @@ int main(void)
     CSCTL3 &= ~(BIT4|BIT5|BIT6);    // DIVS=0
     CSCTL0_H = 0;                   // Relock the CS registers
 
+    // Initialize UART for debug messages
+    #ifdef DEBUG
+    uart_init();
+    #endif
+
+    //////////////////////////////////////////////////////////////////////////////////////////
+    Graphics_Context g_sContext;        // Declare a graphic library context
+    Crystalfontz128x128_Init();         // Initialize the display
+
+    // Set the screen orientation
+    Crystalfontz128x128_SetOrientation(0);
+
+    // Initialize the context
+    Graphics_initContext(&g_sContext, &g_sCrystalfontz128x128);
+
+    // Set background and foreground colors
+    Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
+    Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
+
+    // Set the default font for strings
+    GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
+
+    // Clear the screen
+    Graphics_clearDisplay(&g_sContext);
     ////////////////////////////////////////////////////////////////////////////////////////////
-    // Graphics_Context g_sContext;        // Declare a graphic library context
-    // Crystalfontz128x128_Init();         // Initialize the display
 
-    // // Set the screen orientation
-    // Crystalfontz128x128_SetOrientation(0);
 
-    // // Initialize the context
-    // Graphics_initContext(&g_sContext, &g_sCrystalfontz128x128);
+    
 
-    // // Set background and foreground colors
-    // Graphics_setBackgroundColor(&g_sContext, GRAPHICS_COLOR_BLACK);
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_WHITE);
-
-    // // Set the default font for strings
-    // GrContextFontSet(&g_sContext, &g_sFontFixed6x8);
-
-    // // Clear the screen
-    // Graphics_clearDisplay(&g_sContext);
-    // ////////////////////////////////////////////////////////////////////////////////////////////
-
-    // /*
     // Graphics_drawStringCentered(&g_sContext, "Welcome to", AUTO_STRING_LENGTH, 64, 30, OPAQUE_TEXT);
 
     // sprintf(mystring, "ECE 649!");
@@ -109,12 +129,10 @@ int main(void)
     // Graphics_drawCircle(&g_sContext, 5, 110, 5);
     // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
     // Graphics_fillCircle (&g_sContext, 17, 110, 5);
-    // */
 
     // Graphics_drawImage(&g_sContext, &unh_logo,0,0);
 
     // Program Main Loop
-    uart_init();
     adc_init();
     while(1){
         // Sample the current state of the joystick and pushbuttons
@@ -123,93 +141,124 @@ int main(void)
         s_S1 = checkButton(1);
         s_S2 = checkButton(2);
 
-        // Check state transition conditions
+        // write current state over uart
+        #ifdef DEBUG
+        uart_write_uint16(state);
+        #endif
+
+        // Check state transition conditions, and perform transition actions (managing LCD transitions)
         switch (state) {
             case HOME_SCREEN:
                 if (s_S1) {
+                    img_chng = 1;
                     state = PIC1;
                 }
                 break;
             
             case PIC1:
                 if (s_S2) {
+                    home_chng = 1;
                     state = HOME_SCREEN;
                     break;
                 }
                 switch (s_joystick) {
                     case RIGHT:
+                        img_chng = 1;
                         state++;
                         break;
                     case LEFT:
+                        img_chng = 1;
                         state = PIC5;
+                        break;
+                    default:
                         break;
                 }
                 break;
 
             case PIC2:
                 if (s_S2) {
+                    home_chng = 1;
                     state = HOME_SCREEN;
                     break;
                 }
                 switch (s_joystick) {
                     case RIGHT:
+                        img_chng = 1;
                         state++;
                         break;
                     case LEFT:
+                        img_chng = 1;
                         state--;
+                        break;
+                    default:
                         break;
                 }
                 break;
 
             case PIC3:
                 if (s_S2) {
+                    home_chng = 1;
                     state = HOME_SCREEN;
                     break;
                 }
                 switch (s_joystick) {
                     case RIGHT:
+                        img_chng = 1;
                         state++;
                         break;
                     case LEFT:
+                        img_chng = 1;
                         state--;
+                        break;
+                    default:
                         break;
                 }
                 break;
 
             case PIC4:
                 if (s_S2) {
+                    home_chng = 1;
                     state = HOME_SCREEN;
                     break;
                 }
                 switch (s_joystick) {
                     case RIGHT:
+                        img_chng = 1;
                         state++;
                         break;
                     case LEFT:
+                        img_chng = 1;
                         state--;
+                        break;
+                    default:
                         break;
                 }
                 break;
 
             case PIC5:
                 if (s_S2) {
+                    home_chng = 1;
                     state = HOME_SCREEN;
                     break;
                 }
                 switch (s_joystick) {
                     case RIGHT:
+                        img_chng = 1;
                         state = PIC1;
                         break;
                     case LEFT:
+                        img_chng = 1;
                         state--;
+                        break;
+                    default:
                         break;
                 }
                 break;
 
             default:
+                home_chng = 1;
                 state = HOME_SCREEN;
                 break;
-
         }
 
         // Perform current state actions
@@ -220,22 +269,27 @@ int main(void)
             
             case PIC1:
                 // state behavior
+                active = &moe;
                 break;
 
             case PIC2:
                 // state behavior
+                active = &clancy;
                 break;
 
             case PIC3:
                 // state behavior
+                active = &daisy;
                 break;
 
             case PIC4:
                 // state behavior
+                active = &norb;
                 break;
 
             case PIC5:
                 // state behavior
+                active = &vanish;
                 break;
 
             default:
@@ -244,6 +298,20 @@ int main(void)
         }
     }
 
+    if (img_chng) {
+        Graphics_drawImage(&g_sContext, active, 0, 0);
+        img_chng = 0;
+    }
+
+    if (home_chng) {
+        Graphics_drawStringCentered(&g_sContext, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
+        Graphics_drawStringCentered(&g_sContext, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
+        Graphics_drawStringCentered(&g_sContext, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
+        Graphics_drawStringCentered(&g_sContext, ">>Press S1 to start", AUTO_STRING_LENGTH, 15, 90, OPAQUE_TEXT);
+        Graphics_drawStringCentered(&g_sContext, ">>Press S2 to reset", AUTO_STRING_LENGTH, 15, 115, OPAQUE_TEXT);
+        home_chng = 0;
+    }
+    
     return 0;
 }
 
@@ -251,18 +319,27 @@ enum Button_State checkButton(int button){
     switch (button) {
         case 1:
             if (P3IN & S1){
-                return DOWN;
+                return ACTIVE;
             }
-            return UP;
+            return INACTIVE;
             break;
         case 2:
             if (P3IN & S2){
-                return DOWN;
+                return ACTIVE;
             }
-            return UP;
+            return INACTIVE;
             break;
         default:
-            return NONE;
+            return INACTIVE;
     }
 }
 
+
+void displayHome(Graphics_Context *ctx) {
+    Graphics_drawStringCentered(&ctx, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
+    Graphics_drawStringCentered(&ctx, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
+    Graphics_drawStringCentered(&ctx, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
+    Graphics_drawStringCentered(&ctx, ">>Press S1 to start", AUTO_STRING_LENGTH, 15, 90, OPAQUE_TEXT);
+    Graphics_drawStringCentered(&ctx, ">>Press S2 to reset", AUTO_STRING_LENGTH, 15, 115, OPAQUE_TEXT);
+    return;
+}
