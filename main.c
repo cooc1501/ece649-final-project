@@ -6,10 +6,7 @@
 
 #include "GeorgeLib/george-uart.h"
 #include "GeorgeLib/george-joystick.h"
-#include "GeorgeLib/george-assets.h"
-
-// debug definitions
-// #define DEBUG 
+#include "GeorgeLib/george-photos.h"
 
 #define redLED BIT0
 #define greenLED BIT7
