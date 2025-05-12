@@ -6,6 +6,7 @@
 
 #include "GeorgeLib/george-uart.h"
 #include "GeorgeLib/george-joystick.h"
+#include "GeorgeLib/george-photos.h"
 
 #define redLED BIT0
 #define greenLED BIT7
@@ -33,7 +34,14 @@ int main(void)
     volatile unsigned int counter=0;
     char mystring[20];
     unsigned int n;
-    extern tImage unh_logo;
+    // extern tImage unh_logo;
+
+    // extern tImage moe;
+    // extern tImage daisy;
+    // extern tImage clancy;
+    // extern tImage norb;
+    // extern tImage vanish;
+
 
     enum State state = HOME_SCREEN;
     enum Button_State s_S1, s_S2;
