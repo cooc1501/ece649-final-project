@@ -24,7 +24,6 @@ enum Button_State {
 
 // Functions
 enum Button_State checkButton(int button);
-void displayHome(Graphics_Context *ctx);
 
 
 /**
@@ -39,11 +38,11 @@ int main(void)
     unsigned int home_chng = 1;
     
     // import bitmaps
-    extern tImage moe;
-    extern tImage clancy;
-    extern tImage daisy;
-    extern tImage norb;
-    extern tImage vanish;
+    // extern tImage moe;
+    // extern tImage clancy;
+    // extern tImage daisy;
+    // extern tImage norb;
+    // extern tImage vanish;
     tImage *active;
 
     enum State state = HOME_SCREEN;
@@ -266,41 +265,41 @@ int main(void)
             
             case PIC1:
                 // state behavior
-                active = &moe;
+                active = (Graphics_Image *)&moe;
                 break;
 
             case PIC2:
                 // state behavior
-                active = &clancy;
+                active = (Graphics_Image *)&clancy;
                 break;
 
             case PIC3:
                 // state behavior
-                active = &daisy;
+                active = (Graphics_Image *)&daisy;
                 break;
 
             case PIC4:
                 // state behavior
-                active = &norb;
+                active = (Graphics_Image *)&norb;
                 break;
 
             case PIC5:
                 // state behavior
-                active = &vanish;
-                break;
-
-            default:
-                // state behavior
+                active = (Graphics_Image *)&vanish;
                 break;
         }
     }
 
     if (img_chng) {
+        // Display the new active image
+        Graphics_clearDisplay(&g_sContext);
         Graphics_drawImage(&g_sContext, active, 0, 0);
         img_chng = 0;
     }
 
     if (home_chng) {
+        // Display the home screen text
+        Graphics_clearDisplay(&g_sContext);
         Graphics_drawStringCentered(&g_sContext, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
         Graphics_drawStringCentered(&g_sContext, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
         Graphics_drawStringCentered(&g_sContext, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
@@ -329,14 +328,4 @@ enum Button_State checkButton(int button){
         default:
             return INACTIVE;
     }
-}
-
-
-void displayHome(Graphics_Context *ctx) {
-    Graphics_drawStringCentered(&ctx, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
-    Graphics_drawStringCentered(&ctx, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
-    Graphics_drawStringCentered(&ctx, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
-    Graphics_drawStringCentered(&ctx, ">>Press S1 to start", AUTO_STRING_LENGTH, 15, 90, OPAQUE_TEXT);
-    Graphics_drawStringCentered(&ctx, ">>Press S2 to reset", AUTO_STRING_LENGTH, 15, 115, OPAQUE_TEXT);
-    return;
 }
