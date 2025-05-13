@@ -31,11 +31,13 @@ enum Button_State checkButton(int button);
  */
 int main(void)
 {
+    
     volatile unsigned int counter=0;
     char mystring[20];
     unsigned int n;
     unsigned int img_chng = 0;
     unsigned int home_chng = 1;
+
     
     // import bitmaps
     // extern tImage moe;

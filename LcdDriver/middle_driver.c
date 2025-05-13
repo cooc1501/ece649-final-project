@@ -17,6 +17,8 @@ void HAL_LCD_PortInit(void)
     // OK to ignore UCB0STE/P1.5 since we'll connect the display's enable bit to low (enabled all the time)
     // OK to ignore UCB0SOMI/P1.7 since the display doesn't give back any data
 
+    // Check which BoosterPack pins go to which MSP430 pins and reroute them
+
     ///////////////////////////////////////////////
     // Configuring the display's other pins
     ///////////////////////////////////////////////
@@ -40,22 +42,22 @@ void HAL_LCD_SpiInit(void)
     UCB0CTLW0 |= UCSWRST;
 
     // Set clock phase to "capture on 1st edge, change on following edge"
-    // ...
+    UCB0CTLW0 |= UCCKPH;
     // Set clock polarity to "inactive low"
-    // ...
+    UCB0CTLW0 &= ~UCCKPL;
     // Set data order to "transmit MSB first"
-    // ...
+    UCB0CTLW0 |= UCMSB;
     // Set MCU to "SPI master"
-    // ...
+    UCB0CTLW0 |= UCMST;
     // Set SPI to "3 pin SPI" (we won't use eUSCI's chip select)
-    // ...
+    UCB0CTLW0 &= ~(UCMODE0 | UCMODE1);
     // Set module to synchronous mode
-    // ...
+    UCB0CTLW0 |= UCSYNC;
     // Set clock to SMCLK
-    // ...
+    UCB0CTLW0 |= (UCSSEL1|UCSSEL0);
 
     // Set clock divider to 1 (SMCLK is from DCO at 8 MHz; we'll run SPI at 8 MHz)
-    // UCB0BRW = ...
+    UCB0BRW = 0b01;
 
     // Exit the reset state at the end of the configuration
     UCB0CTLW0 &= ~UCSWRST;
@@ -101,9 +103,6 @@ void HAL_LCD_writeData(uint8_t data)
     // Transmit data
     UCB0TXBUF = data;
 }
-
-
-
 
 
 
