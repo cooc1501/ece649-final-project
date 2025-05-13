@@ -11,23 +11,21 @@ void HAL_LCD_PortInit(void)
     // Configuring the SPI pins
     /////////////////////////////////////
     // Divert UCB0CLK/P1.4 pin to serial clock
-    // ...
+    P1SEL0 |= BIT4;
     // Divert UCB0SIMO/P1.6 pin to SIMO
-    // ...
+    P1SEL0 |= BIT6;
     // OK to ignore UCB0STE/P1.5 since we'll connect the display's enable bit to low (enabled all the time)
     // OK to ignore UCB0SOMI/P1.7 since the display doesn't give back any data
-
-    // Check which BoosterPack pins go to which MSP430 pins and reroute them
 
     ///////////////////////////////////////////////
     // Configuring the display's other pins
     ///////////////////////////////////////////////
     // Set reset pin as output
-    // ...
+    P9DIR |= BIT4;
     // Set the data/command pin as output
-    // ...
+    P1DIR |= BIT6;
     // Set the chip select pin as output
-    // ...
+    P2DIR |= BIT5;
 
     return;
 }
@@ -63,9 +61,9 @@ void HAL_LCD_SpiInit(void)
     UCB0CTLW0 &= ~UCSWRST;
 
     // Set CS' (chip select) bit to 0 (display always enabled)
-    // ...
+    P2OUT &= ~BIT5;
     // Set DC' bit to 0 (assume data)
-    // ...
+    P1OUT *= ~BIT6;
 
     return;
 }
