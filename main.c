@@ -10,8 +10,8 @@
 
 #define redLED BIT0
 #define greenLED BIT7
-#define S1 BIT3  // port 3
-#define S2 BIT2  // port 3
+#define S1 BIT0  // port 3
+#define S2 BIT1  // port 3
 
 // Global Definitions
 enum State {
@@ -94,41 +94,6 @@ int main(void)
     // Clear the screen
     Graphics_clearDisplay(&g_sContext);
     ////////////////////////////////////////////////////////////////////////////////////////////
-
-
-    
-
-    // Graphics_drawStringCentered(&g_sContext, "Welcome to", AUTO_STRING_LENGTH, 64, 30, OPAQUE_TEXT);
-
-    // sprintf(mystring, "ECE 649!");
-    // Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 55, OPAQUE_TEXT);
-
-    // n = 1234;
-    // sprintf(mystring, "%d", n);
-    // Graphics_drawStringCentered(&g_sContext, mystring, AUTO_STRING_LENGTH, 64, 80, OPAQUE_TEXT);
-
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
-    // Graphics_Rectangle color1 = {20,100,128,103};
-    // Graphics_drawRectangle(&g_sContext, &color1);
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
-    // Graphics_fillRectangle(&g_sContext, &color1);
-
-    // Graphics_Rectangle color2 = {40,105,128,108};
-    // Graphics_drawRectangle(&g_sContext, &color2);
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
-    // Graphics_fillRectangle(&g_sContext, &color2);
-
-    // Graphics_Rectangle color3 = {60,110,128,113};
-    // Graphics_drawRectangle(&g_sContext, &color3);
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_RED);
-    // Graphics_fillRectangle(&g_sContext, &color3);
-
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_GREEN);
-    // Graphics_drawCircle(&g_sContext, 5, 110, 5);
-    // Graphics_setForegroundColor(&g_sContext, GRAPHICS_COLOR_BLUE);
-    // Graphics_fillCircle (&g_sContext, 17, 110, 5);
-
-    // Graphics_drawImage(&g_sContext, &unh_logo,0,0);
 
     // Program Main Loop
     adc_init();
@@ -293,21 +258,21 @@ int main(void)
     }
 
     if (img_chng) {
-        // Display the new active image
+        // Clear display, display the new active image
         Graphics_clearDisplay(&g_sContext);
         Graphics_drawImage(&g_sContext, active, 0, 0);
         img_chng = 0;
     }
 
     if (home_chng) {
-        // Display the home screen text
+        // Clear display, display the home screen text
         Graphics_clearDisplay(&g_sContext);
         Graphics_drawStringCentered(&g_sContext, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
         Graphics_drawStringCentered(&g_sContext, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
         Graphics_drawStringCentered(&g_sContext, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
         Graphics_drawStringCentered(&g_sContext, ">>Press S1 to start", AUTO_STRING_LENGTH, 15, 90, OPAQUE_TEXT);
         Graphics_drawStringCentered(&g_sContext, ">>Press S2 to reset", AUTO_STRING_LENGTH, 15, 115, OPAQUE_TEXT);
-        // home_chng = 0;
+        home_chng = 0;
     }
     
     return 0;

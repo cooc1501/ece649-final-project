@@ -11,8 +11,10 @@ void HAL_LCD_PortInit(void)
     // Configuring the SPI pins
     /////////////////////////////////////
     // Divert UCB0CLK/P1.4 pin to serial clock
+    P1SEL1 &= ~BIT4;
     P1SEL0 |= BIT4;
     // Divert UCB0SIMO/P1.6 pin to SIMO
+    P1SEL1 &= ~BIT6;
     P1SEL0 |= BIT6;
     // OK to ignore UCB0STE/P1.5 since we'll connect the display's enable bit to low (enabled all the time)
     // OK to ignore UCB0SOMI/P1.7 since the display doesn't give back any data
@@ -23,7 +25,7 @@ void HAL_LCD_PortInit(void)
     // Set reset pin as output
     P9DIR |= BIT4;
     // Set the data/command pin as output
-    P1DIR |= BIT6;
+    P2DIR |= BIT3;
     // Set the chip select pin as output
     P2DIR |= BIT5;
 
@@ -44,7 +46,7 @@ void HAL_LCD_SpiInit(void)
     // Set clock polarity to "inactive low"
     UCB0CTLW0 &= ~UCCKPL;
     // Set data order to "transmit MSB first"
-    UCB0CTLW0 |= UCMSB;
+    UCB0CTLW0 |= UCMSB; 
     // Set MCU to "SPI master"
     UCB0CTLW0 |= UCMST;
     // Set SPI to "3 pin SPI" (we won't use eUSCI's chip select)
@@ -52,10 +54,10 @@ void HAL_LCD_SpiInit(void)
     // Set module to synchronous mode
     UCB0CTLW0 |= UCSYNC;
     // Set clock to SMCLK
-    UCB0CTLW0 |= (UCSSEL1|UCSSEL0);
+    UCB0CTLW0 |= (UCSSEL1);
 
     // Set clock divider to 1 (SMCLK is from DCO at 8 MHz; we'll run SPI at 8 MHz)
-    UCB0BRW = 0b01;
+    UCB0BRW = 0b00;
 
     // Exit the reset state at the end of the configuration
     UCB0CTLW0 &= ~UCSWRST;
@@ -63,7 +65,7 @@ void HAL_LCD_SpiInit(void)
     // Set CS' (chip select) bit to 0 (display always enabled)
     P2OUT &= ~BIT5;
     // Set DC' bit to 0 (assume data)
-    P1OUT *= ~BIT6;
+    P1OUT *= ~BIT3;
 
     return;
 }
