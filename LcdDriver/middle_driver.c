@@ -65,7 +65,7 @@ void HAL_LCD_SpiInit(void)
     // Set CS' (chip select) bit to 0 (display always enabled)
     P2OUT &= ~BIT5;
     // Set DC' bit to 0 (assume data)
-    P1OUT *= ~BIT3;
+    P1OUT &= ~BIT3;
 
     return;
 }

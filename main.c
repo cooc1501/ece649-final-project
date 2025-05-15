@@ -4,7 +4,6 @@
 #include "LcdDriver/lcd_driver.h"       // LCD driver
 #include <stdio.h>
 
-#include "GeorgeLib/george-uart.h"
 #include "GeorgeLib/george-joystick.h"
 #include "GeorgeLib/george-photos.h"
 
@@ -57,11 +56,6 @@ int main(void)
     CSCTL0 = CSKEY;                 // Unlock CS registers
     CSCTL3 &= ~(BIT4|BIT5|BIT6);    // DIVS=0
     CSCTL0_H = 0;                   // Relock the CS registers
-
-    // Initialize UART for debug messages
-    #ifdef DEBUG
-    uart_init();
-    #endif
 
     //////////////////////////////////////////////////////////////////////////////////////////
     Graphics_Context g_sContext;        // Declare a graphic library context
