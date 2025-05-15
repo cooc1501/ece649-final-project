@@ -33,25 +33,14 @@ int main(void)
 {
     
     volatile unsigned int counter=0;
-    char mystring[20];
-    unsigned int n;
     unsigned int img_chng = 0;
     unsigned int home_chng = 1;
 
-    
-    // import bitmaps
-    // extern tImage moe;
-    // extern tImage clancy;
-    // extern tImage daisy;
-    // extern tImage norb;
-    // extern tImage vanish;
     tImage *active;
 
     enum State state = HOME_SCREEN;
     enum Button_State s_S1, s_S2;
     enum Joystick_Direction s_joystick;
-
-    /* Initialize ADC12_B */
 
     WDTCTL = WDTPW | WDTHOLD;     // Stop the Watchdog timer
     PM5CTL0 &= ~LOCKLPM5;         // Disable GPIO power-on default high-impedance mode
@@ -255,24 +244,24 @@ int main(void)
                 active = (Graphics_Image *)&vanish;
                 break;
         }
-    }
 
-    if (img_chng) {
-        // Clear display, display the new active image
-        Graphics_clearDisplay(&g_sContext);
-        Graphics_drawImage(&g_sContext, active, 0, 0);
-        img_chng = 0;
-    }
+        if (img_chng) {
+            // Clear display, display the new active image
+            Graphics_clearDisplay(&g_sContext);
+            Graphics_drawImage(&g_sContext, active, 0, 0);
+            img_chng = 0;
+        }
 
-    if (home_chng) {
-        // Clear display, display the home screen text
-        Graphics_clearDisplay(&g_sContext);
-        Graphics_drawStringCentered(&g_sContext, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
-        Graphics_drawStringCentered(&g_sContext, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
-        Graphics_drawStringCentered(&g_sContext, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
-        Graphics_drawStringCentered(&g_sContext, ">>Press S1 to start", AUTO_STRING_LENGTH, 15, 90, OPAQUE_TEXT);
-        Graphics_drawStringCentered(&g_sContext, ">>Press S2 to reset", AUTO_STRING_LENGTH, 15, 115, OPAQUE_TEXT);
-        home_chng = 0;
+        if (home_chng) {
+            // Clear display, display the home screen text
+            Graphics_clearDisplay(&g_sContext);
+            Graphics_drawStringCentered(&g_sContext, "ECE649 Photo Frame", AUTO_STRING_LENGTH, 15, 15, OPAQUE_TEXT);
+            Graphics_drawStringCentered(&g_sContext, "Developed By:", AUTO_STRING_LENGTH, 15, 40, OPAQUE_TEXT);
+            Graphics_drawStringCentered(&g_sContext, "George Crane", AUTO_STRING_LENGTH, 15, 65, OPAQUE_TEXT);
+            Graphics_drawStringCentered(&g_sContext, ">>Press S1 to start", AUTO_STRING_LENGTH, 15, 90, OPAQUE_TEXT);
+            Graphics_drawStringCentered(&g_sContext, ">>Press S2 to reset", AUTO_STRING_LENGTH, 15, 115, OPAQUE_TEXT);
+            home_chng = 0;
+        }
     }
     
     return 0;
